@@ -138,6 +138,19 @@ img {
   margin-right: 50px;
 }
 
+/* .contact-item::before {
+  content: ' ';
+  display: inline-block;
+  height: 12px;
+  width: 16px;
+  margin-right: 10px;
+  background-size: 16px;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-image: url('../images/header-svg/envelope.svg');
+  background-color: yellow;
+} */
+
 /* ===ГЕРОЙ=== */
 .hero {
   text-align: center;
@@ -259,6 +272,31 @@ img {
   justify-content: space-between;
   margin-top: 30px;
   margin-left: 30px;
+}
+
+/* ===  ОФОРМЛЕНИЕ ЦВЕТОМ и ИКОНКОЙ  === */
+.section-li::before {
+  content: ' ';
+  display: block;
+  height: 120px;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--button-galery-box);
+}
+
+/* ===  поочередность картинок согласно дизайна   === */
+.section-li:nth-child(1)::before {
+  background-image: url('../images/features-svg/antenna.svg');
+}
+.section-li:nth-child(2)::before {
+  background-image: url('../images/features-svg/clock.svg');
+}
+.section-li:nth-child(3)::before {
+  background-image: url('../images/features-svg/diagram.svg');
+}
+.section-li:nth-child(4)::before {
+  background-image: url('../images/features-svg/astronaut.svg');
 }
 
 .section-ul-headline {
