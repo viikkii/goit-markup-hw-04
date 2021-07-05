@@ -396,7 +396,9 @@ img {
 .contact-icon:focus {
   fill: var(--primary-white-color);
 }
-.contacts-link:hover {
+
+.contacts-link:hover,
+.contacts-link:focus {
   background-color: var(--accent-color);
 }
 
@@ -529,7 +531,8 @@ img {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
 }
-.join-title:hover {
+.join-title:hover,
+.join-title:focus {
   background-color: var(--accent-color);
 }
 
