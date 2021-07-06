@@ -442,14 +442,18 @@ img {
   align-items: center;
   justify-content: center;
 }
-.section-partner:hover,
-.section-partner:focus {
+
+.link-icon:hover,
+.link-icon:focus {
+  fill: var(--accent-color);
+}
+
+.section-partner:hover {
   border: 1px solid var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.link-icon:hover,
-.link-icon:focus {
+.section-partner a:focus svg {
   fill: var(--accent-color);
 }
 
@@ -531,8 +535,9 @@ img {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
 }
-.join-title:hover,
-.join-title:focus {
+
+.join-link:hover,
+.join-link:focus {
   background-color: var(--accent-color);
 }
 
