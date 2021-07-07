@@ -108,10 +108,13 @@ img {
 }
 
 /* ===ссылки навигации черного-цвета - согласно ТЗ=== */
-.site-nav,
+.site-nav {
+  color: var(--section-text-color);
+}
+
 .mail-active,
 .phone-active {
-  color: var(--section-text-color);
+  color: var(--primary-text-color);
 }
 
 /* ===ХЕДЕР контактная информация=== */
@@ -120,17 +123,19 @@ img {
   font-weight: 500;
   letter-spacing: 0.02em;
 }
+
+.mail-active,
+.phone-active {
+  display: flex;
+  align-items: center;
+}
+
 .mail-active:hover,
 .mail-active:focus,
 .phone-active:hover,
 .phone-active:focus {
   color: var(--accent-color);
-}
-
-.contact-item:hover,
-.contact-item:focus {
   fill: var(--accent-color);
-  color: var(--accent-color);
 }
 
 /* ===ХЕДЕР контакты=== */
@@ -291,22 +296,18 @@ img {
   box-sizing: border-box;
 }
 
-.headline-icon {
-  border: 1px solid #f5f4fa;
-  margin-bottom: 25px;
-  margin-top: 25px;
-  margin-left: 100px;
-  margin-right: 100px;
-}
-
 .section-ul-headline {
   margin-top: -30px;
   margin-left: -30px;
 }
 
 .headline-div {
-  background-color: #f5f4fa;
-  border: 1px solid #f5f4fa;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--button-galery-box);
+  border: 1px solid var(--button-galery-box);
   border-radius: 4px;
   margin-bottom: 30px;
 }
@@ -380,7 +381,7 @@ img {
 }
 
 .contact-icon {
-  fill: #afb1b8;
+  color: var(--border-second-color);
 }
 
 .contacts-link {
@@ -390,16 +391,19 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  fill: #afb1b8;
 }
 
 .contact-icon:hover,
 .contact-icon:focus {
   fill: var(--primary-white-color);
+  color: var(--primary-white-color);
 }
 
 .contacts-link:hover,
 .contacts-link:focus {
   background-color: var(--accent-color);
+  fill: var(--primary-white-color);
 }
 
 /* === НАШИ ПАРТНЕРЫ=== */
@@ -423,38 +427,26 @@ img {
   margin-left: -30px;
 }
 
-.section-partner {
-  margin-left: 30px;
-  height: 92px;
-  width: 170px;
-  border: 1px solid #afb1b8;
-  box-sizing: border-box;
+.partnet-link {
+  fill: var(--border-second-color);
+  border: 1px solid var(--border-second-color);
   border-radius: 4px;
-}
-
-.link-icon {
-  fill: #afb1b8;
-  margin-top: 16px;
-  margin-bottom: 16px;
-  margin-left: 32px;
-  margin-right: 32px;
+  width: 170px;
+  height: 92px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.link-icon:hover,
-.link-icon:focus {
-  fill: var(--accent-color);
-}
-
-.section-partner:hover {
-  border: 1px solid var(--accent-color);
+.partnet-link:hover,
+.partnet-link:focus {
+  border-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  fill: var(--accent-color);
 }
 
-.section-partner a:focus svg {
-  fill: var(--accent-color);
+.link-icon {
+  color: var(--border-second-color);
 }
 
 /* ===ФУТЕР=== */
@@ -504,7 +496,7 @@ img {
 }
 .box {
   display: flex;
-  justify-content: flex-start;
+  align-items: baseline;
 }
 
 .box-one {
@@ -522,10 +514,11 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  fill: var(--primary-white-color);
 }
 
 .join-icon {
-  fill: var(--primary-white-color);
+  color: var(--primary-white-color);
 }
 
 .join-title {
@@ -539,10 +532,6 @@ img {
 .join-link:hover,
 .join-link:focus {
   background-color: var(--accent-color);
-}
-
-.join-icon:hover,
-.join-icon:focus {
   fill: var(--primary-white-color);
 }
 
@@ -584,8 +573,12 @@ img {
   margin-left: 30px;
 }
 
-.section-li-galery:hover,
-.section-li-galery:focus {
+.galery-link {
+  display: block;
+}
+
+.galery-link:hover,
+.galery-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
