@@ -427,6 +427,10 @@ img {
   margin-left: -30px;
 }
 
+.section-partner {
+  margin-left: 30px;
+}
+
 .partnet-link {
   fill: var(--border-second-color);
   border: 1px solid var(--border-second-color);
